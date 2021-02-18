@@ -1,0 +1,47 @@
+.my-layouts-enter-active,
+.my-layouts-leave-active {
+  transition: opacity 0.5s;
+}
+.my-layouts-enter,
+.my-layouts-leave-active {
+  opacity: 0;
+}
+
+
+.my-page-enter-active {
+  opacity: 0;
+}
+.my-page-enter-to {
+  animation : zoomOut 2s forwards ease-in-out;
+}
+.my-page-leave-to {
+  /* opacity: 0; */
+  animation : zoomIn 0.4s forwards ease-in-out;
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
+
