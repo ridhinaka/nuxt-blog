@@ -23,6 +23,7 @@
 		"cookie-universal-nuxt": "^2.1.4",
 		"cross-env": "^5.2.0",
 		"express": "^4.16.3",
+		"howler": "^2.2.1",
 		"mobile-orientation": "^2.1.2",
 		"nuxt": "^2.0.0",
 		"tailwindcss": "^1.6.2",
