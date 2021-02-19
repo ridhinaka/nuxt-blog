@@ -44,7 +44,8 @@ module.exports = {
 			}
 		}
 	},
-	target: 'static',
+	mode: "universal",
+	target: "static",
 	modules: [
 		'@nuxtjs/auth',
 		'nuxt-purgecss',
