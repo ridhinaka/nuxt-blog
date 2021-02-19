@@ -9,7 +9,7 @@
         <h1>Choose your present!</h1>
         <div class="body">
           <transition name="img">
-              <a id="#yaya" @click="play" href="#okay-page" v-if="showButton" v-smooth-scroll class="left-body">
+              <a id="#yaya" target="_blank" @click="play" href="https://wa.me/6282110781073?text=I want this https://shopee.co.id/Sepatu-olahraga-Wanita-Sport-Casual-untuk-Outdoor-Running-Sneakers-terbaru-2020-i.58238061.2623828131" v-if="showButton" v-smooth-scroll class="left-body">
                 <h2 class="text">Watch</h2>
                 <img
                 src="~/static/img/watch.png"
@@ -20,7 +20,7 @@
               </a>    
             </transition>
           <transition name="img">
-            <a id="#yaya1" @click="play" href ="#okay-page"  v-if="showButton2"  v-smooth-scroll class="center">
+            <a id="#yaya1" @click="play" target="_blank" href ="https://google.com" v-if="showButton2"  v-smooth-scroll class="center">
               <h2 class="text">Shoes</h2>
               <img
               src="~static/img/shoes.png"
@@ -31,7 +31,7 @@
             </a>
           </transition> 
           <transition name="img">
-              <a id="#yaya2" @click="play" href="#okay-page" v-if="showButton3" v-smooth-scroll class="right-body">
+              <a id="#yaya2" target="_blank" @click="play" href="#okay-page" v-if="showButton3" v-smooth-scroll class="right-body">
               <h2 class="text">Stuff</h2>
               <img
               src="~/static/img/HM.png"
@@ -58,8 +58,10 @@ import jQuery from 'jquery'
 import useSound from 'vue-use-sound'
 import buttonSfx from '../assets/music/god.mp3'
 
-  
+
 export default {
+  
+  
   mounted :jQuery(function(){
         jQuery('#yaya');
         jQuery('#yaya1');
@@ -67,6 +69,7 @@ export default {
       }),
   setup() {
     const [play] = useSound(buttonSfx)
+    
 
     return {
       play,

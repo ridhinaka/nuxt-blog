@@ -4,11 +4,11 @@ const path = require('path')
 module.exports = {
 	mode: 'spa',
 	head: {
-		title: 'Riza Fauzi',
+		title: 'Faliha Ishma',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: "apple-mobile-web-app-capable", content: "yes" },
-			{ hid: 'description', name: 'description', content: `Hi, I'm Riza Fauzi` },
+			{ hid: 'description', name: 'description', content: `Hi, I'm Faliha Ishma` },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, viewport-fit=cover' },
 		],
 		link: [

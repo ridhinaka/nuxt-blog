@@ -11,38 +11,52 @@
     </div>
       <div class="background">
         <div class="photo-grid1">
-          <transition class="img">
-          <img
-          src="~/static/grid/1.jpg" v-if="grid1"
-          class="jpg-5">
-          </transition>         
-          <img
-          src="~/static/grid/5.jpg" v-if="grid5"
-          class="jpg-5">
+          <transition name="img">
+            <img
+            src="~/static/grid/1.jpg" v-if="grid1"
+            class="jpg-5">
+          </transition> 
+          <transition name="img">        
+            <img
+            src="~/static/grid/5.jpg" v-if="grid5"
+            class="jpg-5">
+          </transition> 
         </div>
       <div class="photo-grid2">
-        <img
-        src='~/static/grid/2.jpg' v-if="grid2"
-        class="jpg-2">
-        <img
-        src="~/static/grid/6.jpg" v-if="grid6"
-        class="jpg-6">
+        <transition name="img">
+          <img
+          src='~/static/grid/2.jpg' v-if="grid2"
+          class="jpg-2">
+        </transition> 
+        <transition name="img">
+          <img
+          src="~/static/grid/6.jpg" v-if="grid6"
+          class="jpg-6">
+        </transition> 
       </div>
       <div class="photo-grid3">
-        <img
-        src='~/static/grid/3-5.jpg' v-if="grid3"
-        class="jpg-3">
-        <img
-        src="~/static/grid/7.jpg" v-if="grid7"
-        class="jpg-7">
+        <transition name="img">
+          <img
+          src='~/static/grid/3-5.jpg' v-if="grid3"
+          class="jpg-3">
+        </transition> 
+        <transition name="img">
+          <img
+          src="~/static/grid/7.jpg" v-if="grid7"
+          class="jpg-7">
+        </transition> 
       </div>
       <div class="photo-grid4">
-        <img
-        src='~/static/grid/4.jpg' v-if="grid4"
-        class="jpg-4">
-        <img
-        src="~/static/grid/8.jpg" v-if="grid8"
-        class="jpg-8">
+        <transition name="img">
+          <img
+          src='~/static/grid/4.jpg' v-if="grid4"
+          class="jpg-4">
+        </transition> 
+        <transition name="img">
+          <img
+          src="~/static/grid/8.jpg" v-if="grid8"
+          class="jpg-8">
+        </transition> 
       </div>
     </div>
   </div>
