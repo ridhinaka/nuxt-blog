@@ -3,56 +3,48 @@
     "name": "end",
     "path": "/end",
     "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/end.vue",
-    "chunkName": "pages/end",
-    "_name": "_4788a919"
+    "chunkName": "pages/end"
   },
   {
     "name": "grid",
     "path": "/grid",
     "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/grid.vue",
-    "chunkName": "pages/grid",
-    "_name": "_58483c78"
+    "chunkName": "pages/grid"
   },
   {
     "name": "okay-page",
     "path": "/okay-page",
     "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/okay-page.vue",
-    "chunkName": "pages/okay-page",
-    "_name": "_48e7bae6"
+    "chunkName": "pages/okay-page"
   },
   {
     "name": "present-page",
     "path": "/present-page",
     "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/present-page.vue",
-    "chunkName": "pages/present-page",
-    "_name": "_4aa3ba13"
+    "chunkName": "pages/present-page"
   },
   {
     "name": "state",
     "path": "/state",
     "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/state.js",
-    "chunkName": "pages/state",
-    "_name": "_d8151d40"
+    "chunkName": "pages/state"
   },
   {
     "name": "video",
     "path": "/video",
     "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/video.vue",
-    "chunkName": "pages/video",
-    "_name": "_92ff998e"
+    "chunkName": "pages/video"
   },
   {
     "name": "virtual-birthdaycake",
     "path": "/virtual-birthdaycake",
     "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/virtual-birthdaycake.vue",
-    "chunkName": "pages/virtual-birthdaycake",
-    "_name": "_b943fb2e"
+    "chunkName": "pages/virtual-birthdaycake"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_36eb4410"
+    "chunkName": "pages/index"
   }
 ]

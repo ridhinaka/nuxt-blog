@@ -4,13 +4,16 @@
   <section class= "wrapper">
     <iframe class= "video" width="560" height="315" src="https://www.youtube.com/embed/bNvJA0eWXAA?autoplay=1" frameborder="0" allow="accelerometer; autoplay: 1 ; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
-    <a id="yaya" href="#virtual-birthdaycake" @click="play" v-smooth-scroll v-if="showButton" class="button">
-      <h1>To another surprise!</h1>
+    <a id="yaya" href="#virtual-birthdaycake" @click="playMusic()" v-if="showButton" class="button">
+      <h1>Click for another surprise!</h1>
     </a> 
   </section>
   <section id="virtual-birthdaycake">
     <virtual-birthdaycake />
   </section>
+  <audio id="audio" ref="audio" loop="loop">
+    <source src="~assets/music/ulang-tahun.mp3" type="audio/mpeg">
+  </audio>
 </div>
 
 
@@ -18,23 +21,18 @@
 
 <script>
 
-import jQuery from 'jquery'
-import useSound from 'vue-use-sound'
-import buttonSfx from '../assets/music/ulang-tahun.mp3'
+
 import virtualBirthdaycake from '../components/virtual-birthdaycake.vue'
 
 
 export default {
-  mounted :jQuery(function(){
-        jQuery('#yaya');
-      }),
-  setup() {
-    const [play] = useSound(buttonSfx)
-
-    return {
-      play,
-    }
-  },
+  methods: {
+		playMusic() {
+		var player = document.getElementById('audio');
+    player.currentTime = 0;  
+    player.play()
+		}
+	},
 
   components: { virtualBirthdaycake },
   
@@ -53,6 +51,7 @@ export default {
     // setTimeout
     // setInterval
     // clearInterval
+    
 
     setTimeout(() => {
       this.showButton = true
@@ -79,7 +78,7 @@ export default {
     position: absolute;
     z-index: 999;   
   }
-   .button{
+  .button{
       display: flex;
       justify-content: center;
       align-items: center;

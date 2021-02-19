@@ -44,7 +44,7 @@ module.exports = {
 			}
 		}
 	},
-	mode: "universal",
+	mode: "spa",
 	target: "static",
 	modules: [
 		'@nuxtjs/auth',
