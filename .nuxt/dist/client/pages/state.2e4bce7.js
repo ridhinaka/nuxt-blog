@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{283:function(n,c,r){"use strict";r.r(c),r.d(c,"navImage",(function(){return o})),r.d(c,"conImage",(function(){return t}));var o=[{id:1,src:"search.png"},{id:2,src:"notification.png"},{id:3,src:"shopping-bag.png"},{id:4,src:"avatar.png"}],t=[id]}}]);
