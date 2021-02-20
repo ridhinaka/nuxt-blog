@@ -44,6 +44,7 @@ methods: {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 .img-enter-active, .img-leave-active {
   transition: opacity .5s;
@@ -92,8 +93,8 @@ methods: {
         flex-direction: column;
         padding: 30px;
         p{
-          font-size: 50px;
-          font-family: 'Altero regular';
+          font-size: 55px;
+          font-family: 'Patrick Hand', cursive;
           text-align: center;
           color: black;
         }

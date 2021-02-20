@@ -5,7 +5,6 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _4788a919 = () => interopDefault(import('../pages/end.vue' /* webpackChunkName: "pages/end" */))
 const _58483c78 = () => interopDefault(import('../pages/grid.vue' /* webpackChunkName: "pages/grid" */))
-const _48e7bae6 = () => interopDefault(import('../pages/okay-page.vue' /* webpackChunkName: "pages/okay-page" */))
 const _4aa3ba13 = () => interopDefault(import('../pages/present-page.vue' /* webpackChunkName: "pages/present-page" */))
 const _d8151d40 = () => interopDefault(import('../pages/state.js' /* webpackChunkName: "pages/state" */))
 const _92ff998e = () => interopDefault(import('../pages/video.vue' /* webpackChunkName: "pages/video" */))
@@ -36,10 +35,6 @@ export const routerOptions = {
     path: "/grid",
     component: _58483c78,
     name: "grid"
-  }, {
-    path: "/okay-page",
-    component: _48e7bae6,
-    name: "okay-page"
   }, {
     path: "/present-page",
     component: _4aa3ba13,

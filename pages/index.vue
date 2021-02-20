@@ -55,7 +55,7 @@ export default {
   }
 }
 
- .web {
+.web {
     display: block;
   }
   .mobile{
@@ -72,14 +72,14 @@ export default {
   // height: 100vh;
   min-width: 100%;
   display: inline-block;
-   .mobile{
+  .mobile{
     // display: flex;
     width: 100%;
     height: 100vh;
     background: black;
     position: relative;
     h2{
-      font-family: "altero regular";
+      font-family: 'Ubuntu', sans-serif;
       color: white;
       font-size: 25px;
       margin:0;
@@ -127,8 +127,10 @@ export default {
         h1{
           font-size : 65px;
           // margin-top: -100px;
-          font-family: 'Pumpkin cheese';
+          font-family: 'Dancing Script', cursive;
+          font-family: 'Patrick Hand', cursive;
           z-index: 10000;
+          font-weight: bold;
         }
         .emoji{
           display:flex;
@@ -150,8 +152,9 @@ export default {
           margin-bottom: -100px;
           z-index: 10000;
           h2{
-            font-size: 35px;
-            font-family: 'Pumpkin cheese';
+            font-size: 30px;
+            font-family: 'Kalam', cursive;
+            font-family: 'Patrick Hand', cursive;
             z-index: 10000;
             color: khaki;
             font-weight: bold;

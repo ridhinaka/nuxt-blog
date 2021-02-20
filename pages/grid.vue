@@ -1,10 +1,10 @@
 <template>
-<div class="container">
+<div class="big-box">
   <div class="web">
     <div class="text">
       <h1>갤러리</h1>
       <transition name="img">
-        <div @click="doSomething" v-if="showButton" class="next-page">
+        <div  @click="goToSection('grid2')"  v-if="showButton" class="next-page">
           <h3>Next!</h3>
         </div>
       </transition>     
@@ -60,11 +60,21 @@
       </div>
     </div>
   </div>
+  <section ref="grid2">
+    <grid2  />
+  </section>
+    <audio id="audio" ref="audio" loop="loop" autoplay="autoplay">
+      <source src="~assets/music/opendoor.mp3" type="audio/mpeg">
+    </audio>
 </div>  
+
 </template>
 
 <script>
+import grid2 from '../components/grid2.vue'
+
 export default {
+
   data(){
     return{
       grid1:false,
@@ -78,10 +88,12 @@ export default {
       showButton:false
     }
   },
+components: { grid2 },
 
-  methods: {
-    doSomething() {
-      this.$router.push({path :'/end'})
+  methods:{
+    goToSection(section) {
+      // this.initial=true
+      this.$refs[section].scrollIntoView({ behavior: 'smooth' })
     }
   },
   mounted() {
@@ -103,26 +115,20 @@ export default {
       this.grid4 = true
     }, 5000)
     setTimeout(() => {
-      this.grid4 = true
+      this.grid5 = true
     }, 6000)
     setTimeout(() => {
-      this.grid5 = true
+      this.grid6 = true
     }, 7000)
     setTimeout(() => {
-      this.grid6 = true
+      this.grid7 = true
     }, 8000)
     setTimeout(() => {
-      this.grid7 = true
+      this.grid8 = true
     }, 9000)
     setTimeout(() => {
-      this.grid7 = true
-    }, 10000)
-    setTimeout(() => {
-      this.grid8 = true
-    }, 11000)
-    setTimeout(() => {
       this.showButton = true
-    }, 12000)
+    }, 11000)
   }
 }
 </script>
@@ -151,13 +157,13 @@ export default {
 .img-enter, .img-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-.container{
+.big-box{
   display: flex;
   height: 100%;
   min-width: 100%;
   background: white;
-  // flex-direction: row;
-  // overflow: hidden;
+  flex-direction: column;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   .mobile{
@@ -167,7 +173,7 @@ export default {
     background: black;
     position: relative;
     h2{
-      font-family: "altero regular";
+      font-family: 'Patrick Hand', cursive;
       color: white;
       font-size: 25px;
       margin:0;
@@ -186,6 +192,7 @@ export default {
       align-items: center;
       h1{
         color:black;
+        font-family: 'Patrick Hand', cursive;
       }
       .next-page{
         display: flex;
@@ -197,8 +204,7 @@ export default {
         border-radius: 10px;
         h3{
           color: white;
-          font-family: "altero regular";
-          
+          font-family: 'Patrick Hand', cursive; 
         }
       }
     }

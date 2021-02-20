@@ -47,7 +47,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-     .background-index{
+    .background-index{
       height: 100vh;
       min-width: 100%;
       display: flex;
@@ -67,7 +67,8 @@ export default {
       // margin-top: 80px;
       h1{
         margin-top: 120px;
-        font-family: "altero regular";
+        font-family: 'Kalam', cursive;
+        font-family: 'Patrick Hand', cursive;
       }
       .open-bar{
         display: flex;
@@ -77,7 +78,6 @@ export default {
         align-items: flex-end;
         justify-content: flex-end;
         // margin-top: 130px;
-
         .button{
           display: flex;
           // background: gray;
@@ -89,8 +89,8 @@ export default {
           align-items: center;
           margin-bottom: 20px;
           h2{
-            font-size: 12px;
-            font-family: "altero regular";
+            font-size: 17px;
+            font-family: 'Patrick Hand', cursive;
             color: black;
             // background: blue;
           }
@@ -99,7 +99,7 @@ export default {
     }
   }
 }
- .button:hover {
+.button:hover {
     cursor: pointer;
     background: rgba(60, 61, 52, 0.9);
     z-index: 1000000;

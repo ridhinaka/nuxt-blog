@@ -9,7 +9,7 @@
         <h1>Choose your present!</h1>
         <div class="body">
           <transition name="img">
-              <a id="#yaya" target="_blank" @click="play" href="https://wa.me/6282110781073?text=I want this https://shopee.co.id/Sepatu-olahraga-Wanita-Sport-Casual-untuk-Outdoor-Running-Sneakers-terbaru-2020-i.58238061.2623828131" v-if="showButton" class="left-body">
+              <a id="#yaya" @click="goToSection('okay-page')" target="_blank" href ="https://wa.me/6282110781073?text=Please buy me this shoes :)" v-if="showButton" class="left-body">
                 <h2 class="text">Watch</h2>
                 <img
                 src="~/static/img/watch.png"
@@ -20,7 +20,7 @@
               </a>    
             </transition>
           <transition name="img">
-            <a id="#yaya1" @click="play" target="_blank" href ="https://google.com" v-if="showButton2"  class="center">
+            <a id="#yaya1" @click="goToSection('okay-page')" target="_blank" href ="https://wa.me/6282110781073?text=Please buy me this watch :)" v-if="showButton2"  class="center">
               <h2 class="text">Shoes</h2>
               <img
               src="~static/img/shoes.png"
@@ -30,9 +30,8 @@
               class="sticker">
             </a>
           </transition> 
-          <!-- <section id="okay"> -->
               <transition name="img">
-                <a id="#yaya2"  @click="play" href="#okay-page" v-if="showButton3"  class="right-body">
+                <a id="#yaya2" @click="goToSection('okay-page')" target="_blank" href="https://wa.me/6282110781073?text=Please buy me this HnM :)"  v-if="showButton3"  class="right-body">
                   <h2 class="text">Stuff</h2>
                   <img
                   src="~/static/img/HM.png"
@@ -42,49 +41,39 @@
                   class="sticker">
                 </a>
               </transition>  
-          <!-- </section>  -->
         </div>
       </div>
     </div>
   </div>
-  <section id = "okay-page">
-    <okay-page />
+  <section ref="okay-page">
+    <okay-page  />
   </section>
+  <!-- <section ref="watch">
+    <okay-page  />
+  </section> -->
 </div>
   
 </template>
 
 <script>
-import okayPage from './okay-page.vue'
-import jQuery from 'jquery'
-import useSound from 'vue-use-sound'
-import buttonSfx from '../assets/music/god.mp3'
-
+import okayPage from '../components/okay-page.vue'
 
 export default {
-  
-  
-  mounted :jQuery(function(){
-        jQuery('#yaya');
-        jQuery('#yaya1');
-        jQuery('#yaya2');
-      }),
-  setup() {
-    const [play] = useSound(buttonSfx)
-    
-
-    return {
-      play,
-    }
-  },
-  components: { okayPage},
   data(){
     return{
       showButton : false,
       showButton2 :false,
-      showButton3 :false
+      showButton3 :false,
+      // initial : false
     }
   },
+  methods:{
+    goToSection(section) {
+      // this.initial=true
+      this.$refs[section].scrollIntoView({ behavior: 'smooth' })
+    }
+  },
+  components: { okayPage},
     mounted(){
       setTimeout(() => {
         this.showButton = true
@@ -92,15 +81,16 @@ export default {
       setTimeout(() => {
         this.showButton2 = true
       }, 2000)
-      setTimeout(() => {
+      setTimeout(()=> {
         this.showButton3 = true
-      },3000)
+      })
     }
 
 }
 </script>
 
 <style lang="scss" scoped>
+
 
 .img-enter-active, .img-leave-active {
   transition: opacity .5s;
@@ -260,19 +250,19 @@ export default {
     }
   }
 }
- .left-body:hover {
+.left-body:hover {
     cursor: pointer;
     background: rgba(200, 221, 4, 0.9);
     // z-index: 1000000;
   }
 
-   .right-body:hover {
+.right-body:hover {
     cursor: pointer;
     background: rgba(73, 209, 4, 0.9);
     // z-index: 1000000;
   }
 
-   .center:hover {
+.center:hover {
     cursor: pointer;
     background: rgba(4, 96, 216, 0.9);
     // z-index: 1000000;

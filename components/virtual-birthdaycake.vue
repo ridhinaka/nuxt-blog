@@ -15,6 +15,9 @@
         </div>
       </div>
     </div>
+    <audio id="audio" ref="audio" loop="loop">
+    <source src="~assets/music/ulang-tahun.mp3" type="audio/mpeg">
+  </audio>
   </div>
 </template>
 
@@ -28,7 +31,7 @@ export default {
       showButton : true
     }
   },
-   methods: {
+methods: {
     doSomething() {
       this.$router.push({path :'/present-page'})
     }
@@ -93,9 +96,9 @@ export default {
         z-index: -99999;
         // background: darkcyan;
         h3{
-          font-size: 10px;
+          font-size: 15px;
           // font-weight: bold;
-          font-family: "altero regular";
+          font-family: 'Patrick Hand', cursive;
           // color: white;
         }
       }

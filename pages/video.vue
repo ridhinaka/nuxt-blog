@@ -2,7 +2,7 @@
 <div>
 
   <section class= "wrapper">
-    <iframe class= "video" width="560" height="315" src="https://www.youtube.com/embed/bNvJA0eWXAA?autoplay=1" frameborder="0" allow="accelerometer; autoplay: 1 ; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gCn5ssMYio0?autoplay=1" frameborder="0" allow="accelerometer; autoplay: 1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
     <a id="yaya" href="#virtual-birthdaycake" @click="playMusic()" v-if="showButton" class="button">
       <h1>Click for another surprise!</h1>
@@ -41,11 +41,6 @@ export default {
       showButton :false
     }
   },
-  // methods: {
-  //   doSomething() {
-  //     this.$router.push({path :'/virtual-birthdaycake'})
-  //   }
-  // },
     mounted() {
 
     // setTimeout
@@ -55,7 +50,7 @@ export default {
 
     setTimeout(() => {
       this.showButton = true
-    }, 1000)
+    }, 130000)
   }
 }
 </script>
@@ -95,10 +90,12 @@ export default {
       h1{
         font-size: 12px;
         color:white;
-
+        font-family: 'Kalam', cursive;
+        font-family: 'Patrick Hand', cursive;
+        font-weight: bold;
       }
     }
- .button:hover {
+.button:hover {
   cursor: pointer;
   background: darkcyan;
 }   
