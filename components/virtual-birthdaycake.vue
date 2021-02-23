@@ -15,9 +15,6 @@
         </div>
       </div>
     </div>
-    <audio id="audio" ref="audio" loop="loop">
-    <source src="~assets/music/ulang-tahun.mp3" type="audio/mpeg">
-  </audio>
   </div>
 </template>
 

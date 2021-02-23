@@ -1,8 +1,7 @@
 <template>
 <div>
-
   <section class= "wrapper">
-    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gCn5ssMYio0?autoplay=1" frameborder="0" allow="accelerometer; autoplay: 1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gCn5ssMYio0?autoplay=1" frameborder="0" allow="accelerometer; autoplay: 1; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
     </iframe>
     <a id="yaya" href="#virtual-birthdaycake" @click="playMusic()" v-if="showButton" class="button">
       <h1>Click for another surprise!</h1>
@@ -31,7 +30,7 @@ export default {
 		var player = document.getElementById('audio');
     player.currentTime = 0;  
     player.play()
-		}
+		},
 	},
 
   components: { virtualBirthdaycake },
@@ -62,7 +61,6 @@ export default {
   width: 100%;
   justify-content: center;
   align-items:center ;
-  
 }
   .video {
     display: flex;

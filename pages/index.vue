@@ -130,7 +130,7 @@ export default {
           font-family: 'Dancing Script', cursive;
           font-family: 'Patrick Hand', cursive;
           z-index: 10000;
-          font-weight: bold;
+          // font-weight: bold;
         }
         .emoji{
           display:flex;

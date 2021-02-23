@@ -10,9 +10,9 @@
         <div class="body">
           <transition name="img">
               <a id="#yaya" @click="goToSection('okay-page')" target="_blank" href ="https://wa.me/6282110781073?text=Please buy me this shoes :)" v-if="showButton" class="left-body">
-                <h2 class="text">Watch</h2>
+                <h2 class="text">Shirt</h2>
                 <img
-                src="~/static/img/watch.png"
+                src="~/static/img/t-shirt.png"
                 class="watch">
                 <img
                 src="~/static/visval/stiker1.webp"
@@ -32,9 +32,9 @@
           </transition> 
               <transition name="img">
                 <a id="#yaya2" @click="goToSection('okay-page')" target="_blank" href="https://wa.me/6282110781073?text=Please buy me this HnM :)"  v-if="showButton3"  class="right-body">
-                  <h2 class="text">Stuff</h2>
+                  <h2 class="text">Wallet</h2>
                   <img
-                  src="~/static/img/HM.png"
+                  src="~/static/img/wallet.png"
                   class="HM">
                   <img
                   src="~static/visval/stiker3.webp"

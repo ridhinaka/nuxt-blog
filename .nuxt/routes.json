@@ -28,6 +28,13 @@
     "_name": "_d8151d40"
   },
   {
+    "name": "tes audio",
+    "path": "/tes audio",
+    "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/tes audio.vue",
+    "chunkName": "pages/tes audio",
+    "_name": "_15cef396"
+  },
+  {
     "name": "video",
     "path": "/video",
     "component": "/Users/ridhinaka/Documents/coding stuff/Falihas/pages/video.vue",

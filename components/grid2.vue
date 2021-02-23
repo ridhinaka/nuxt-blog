@@ -1,11 +1,12 @@
 <template>
+<div>
   <div class ="container">
     <div class="text">
       <transition name ="img">
         <h1>우리!</h1>
       </transition>
       <transition name="img">
-        <div @click="doSomething" v-if="showButton" class="button">
+        <div @click="goToSection('video2')" v-if="showButton" class="button">
           <h2>NEXT</h2>
         </div> 
       </transition>  
@@ -14,13 +15,13 @@
       <div class="box-1">
         <transition name ="img">
           <img
-          v-if="grid1"
+          v-if="grid9"
           src="~/static/grid 2/2-1.jpg"
           class="img-1">
         </transition>
         <transition name ="img">
           <img
-          v-if="grid2"
+          v-if="grid10"
           src="~/static/grid 2/2-2.jpg"
           class="img-2">
         </transition>
@@ -28,13 +29,13 @@
       <div class="box-2">
         <transition name="img">
           <img
-          v-if="grid3"
+          v-if="grid11"
           src="~/static/grid 2/2-3.jpg"
           class="img-3">
         </transition>
         <transition name ="img">
           <img
-          v-if="grid4"
+          v-if="grid12"
           src="~/static/grid 2/2-4.jpg"
           class="img-4">
         </transition>
@@ -42,13 +43,13 @@
       <div class="box-3">
         <transition name ="img">
           <img
-          v-if="grid5"
+          v-if="grid13"
           src="~/static/grid 2/2-5.jpg"
           class="img-5">
         </transition>
         <transition name ="img">
           <img
-          v-if="grid6"
+          v-if="grid14"
           src="~/static/grid 2/2-6-1.jpg"
           class="img-6">
         </transition>
@@ -56,42 +57,47 @@
       <div class="box-4">
         <transition name ="img">
           <img
-          v-if="grid7"
+          v-if="grid15"
           src="~/static/grid 2/2-7.jpg"
           class="img-7">
         </transition>
         <transition name="img">
           <img
-          v-if="grid8"
+          v-if="grid16"
           src="~/static/grid 2/2-8-2.jpg"
           class="img-8">
         </transition>
       </div>
     </div>
   </div>
+    <section ref="video2">
+      <video2  />
+    </section>
+</div>
+  
 </template>
 
 <script>
+
+
+import video2 from '../components/video2.vue'
+
 export default {
   data(){
     return{
-      grid1:false,
-      grid2:false,
-      grid3:false,
-      grid4:false,
-      grid5:false,
-      grid6:false,
-      grid7:false,
-      grid8:false,
+      grid9:false,
+      grid10:false,
+      grid11:false,
+      grid12:false,
+      grid13:false,
+      grid14:false,
+      grid15:false,
+      grid16:false,
       showButton:false
     }
   },
+  components: { video2 },
 
-  methods: {
-    doSomething() {
-      this.$router.push({path :'/end'})
-    }
-  },
   mounted() {
 
     // setTimeout
@@ -99,32 +105,38 @@ export default {
     // clearInterval
 
     setTimeout(() => {
-      this.grid1 = true
+      this.grid9 = true
     }, 2000)
     setTimeout(() => {
-      this.grid2 = true
+      this.grid10 = true
     }, 3000)
     setTimeout(() => {
-      this.grid3 = true
+      this.grid11 = true
     }, 4000)
     setTimeout(() => {
-      this.grid4 = true
+      this.grid12 = true
     }, 5000)
     setTimeout(() => {
-      this.grid5 = true
+      this.grid13 = true
     }, 6000)
     setTimeout(() => {
-      this.grid6 = true
+      this.grid14 = true
     }, 7000)
     setTimeout(() => {
-      this.grid7 = true
+      this.grid15 = true
     }, 8000)
     setTimeout(() => {
-      this.grid8 = true
+      this.grid16 = true
     }, 9000)
     setTimeout(() => {
       this.showButton = true
     }, 11000)
+  },
+  methods:{
+    goToSection(section) {
+    // this.initial=true
+    this.$refs[section].scrollIntoView({ behavior: 'smooth' })
+    },
   },
 }
 </script>
@@ -139,7 +151,7 @@ export default {
 }
 
 .container{
-  margin-top: 20px;
+  margin-top: 5px;
   display: flex;
   height: 100%;
   min-width: 100%;
@@ -177,13 +189,12 @@ export default {
   }
   .image{
     display: flex;
-    // height: 100vh;
-    min-width: 100%;
+    // min-height: 100vh;
+    // min-width: 100%;
     // background:black;
     justify-content: center;
-    align-items: center;
     // margin-top: 34px;
-    overflow: hidden;
+    // overflow: hidden;
     .box-1{
       display: flex;
       height: 85vh;

@@ -7,6 +7,7 @@ const _4788a919 = () => interopDefault(import('../pages/end.vue' /* webpackChunk
 const _58483c78 = () => interopDefault(import('../pages/grid.vue' /* webpackChunkName: "pages/grid" */))
 const _4aa3ba13 = () => interopDefault(import('../pages/present-page.vue' /* webpackChunkName: "pages/present-page" */))
 const _d8151d40 = () => interopDefault(import('../pages/state.js' /* webpackChunkName: "pages/state" */))
+const _15cef396 = () => interopDefault(import('../pages/tes audio.vue' /* webpackChunkName: "pages/tes audio" */))
 const _92ff998e = () => interopDefault(import('../pages/video.vue' /* webpackChunkName: "pages/video" */))
 const _b943fb2e = () => interopDefault(import('../pages/virtual-birthdaycake.vue' /* webpackChunkName: "pages/virtual-birthdaycake" */))
 const _36eb4410 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -43,6 +44,10 @@ export const routerOptions = {
     path: "/state",
     component: _d8151d40,
     name: "state"
+  }, {
+    path: "/tes audio",
+    component: _15cef396,
+    name: "tes audio"
   }, {
     path: "/video",
     component: _92ff998e,

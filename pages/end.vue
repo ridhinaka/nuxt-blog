@@ -13,7 +13,6 @@
             </div>
                 <div @click="doSomething" class="button">
                   <div class="red">
-
                   </div>
                 </div>
         </div>
@@ -33,7 +32,7 @@ data(){
 mounted(){
     setTimeout(() => {
       this.showButton = true
-    }, 500)
+    }, 3000)
   },
 methods: {
     doSomething() {
