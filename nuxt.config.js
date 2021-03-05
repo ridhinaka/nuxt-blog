@@ -25,6 +25,10 @@ module.exports = {
 			{
 				rel : 'stylesheet',
 				href: 'https://fonts.googleapis.com/css2?family=Dancing+Script&family=Patrick+Hand&display=swap'
+			},
+			{
+				rel : 'stylesheet',
+				href: "https://fonts.googleapis.com/css2?family=Ribeye&display=swap"
 			}
 		]
 	},

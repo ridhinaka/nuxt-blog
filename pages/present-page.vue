@@ -9,7 +9,7 @@
         <h1>Choose your present!</h1>
         <div class="body">
           <transition name="img">
-              <a id="#yaya" @click="goToSection('okay-page')" target="_blank" href ="https://wa.me/6282110781073?text=Please buy me this shoes :)" v-if="showButton" class="left-body">
+              <a id="#yaya" @click="goToSection('okay-page')" target="_blank" href ="https://wa.me/6282110781073?text=Please buy me this shirt :) REMINDER FOR FALIHA: after chat me through whatsapp,please dont forget to go back to the web again (this is just a reminder for YOU)" v-if="showButton" class="left-body">
                 <h2 class="text">Shirt</h2>
                 <img
                 src="~/static/img/t-shirt.png"
@@ -20,7 +20,7 @@
               </a>    
             </transition>
           <transition name="img">
-            <a id="#yaya1" @click="goToSection('okay-page')" target="_blank" href ="https://wa.me/6282110781073?text=Please buy me this watch :)" v-if="showButton2"  class="center">
+            <a id="#yaya1" @click="goToSection('okay-page')" target="_blank" href ="https://wa.me/6282110781073?text=Please buy me this Shoes, size : (drop your size) :) REMINDER FOR FALIHA: after chat me through whatsapp,please dont forget to go back to the web again (this is just a reminder for YOU)" v-if="showButton2"  class="center">
               <h2 class="text">Shoes</h2>
               <img
               src="~static/img/shoes.png"
@@ -31,7 +31,7 @@
             </a>
           </transition> 
               <transition name="img">
-                <a id="#yaya2" @click="goToSection('okay-page')" target="_blank" href="https://wa.me/6282110781073?text=Please buy me this HnM :)"  v-if="showButton3"  class="right-body">
+                <a id="#yaya2" @click="goToSection('okay-page')" target="_blank" href="https://wa.me/6282110781073?text=Please buy me this Wallet :) REMINDER FOR FALIHA: after chat me through whatsapp,please dont forget to go back to the web again (this is just a reminder for YOU)"  v-if="showButton3"  class="right-body">
                   <h2 class="text">Wallet</h2>
                   <img
                   src="~/static/img/wallet.png"
@@ -252,19 +252,19 @@ export default {
 }
 .left-body:hover {
     cursor: pointer;
-    background: rgba(200, 221, 4, 0.9);
+    background:linear-gradient(to bottom, rgb(158, 16, 16), rgb(192, 192, 11));
     // z-index: 1000000;
   }
 
 .right-body:hover {
     cursor: pointer;
-    background: rgba(73, 209, 4, 0.9);
+    background: linear-gradient(to bottom, green, rgb(4, 96, 216));
     // z-index: 1000000;
   }
 
 .center:hover {
     cursor: pointer;
-    background: rgba(4, 96, 216, 0.9);
+    background: linear-gradient(to bottom, purple, pink);
     // z-index: 1000000;
   }
 

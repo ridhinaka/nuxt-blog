@@ -4,15 +4,14 @@
       <section class="web">
           <section class="background">
           <img
-          src= "~/static/visval/index3.webp"
+          src= "~/static/img/123.jpg"
           class="background-index">
           <section class="wrapper">
-              <h1>Hi Faliha Ishma!</h1>
-              <img
-              src="~/static/visval/stiker3.webp"
-              class="emoji">
+            <section class="text">
+              <h1>Hello Faliha</h1>
+            </section>  
             <section @click="doSomething" v-if="showButton" class="open-bar">
-              <h2>Click here!</h2>
+              <h2>Click here to start</h2>
             </section>
           </section>
         </section>
@@ -44,6 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
 
 @media only screen and (max-width: 600px) {
   .web {
@@ -106,57 +106,56 @@ export default {
       position: absolute;
       // overflow: hidden;
       // overflow-y: hidden;
-      object-fit: cover;
+      object-fit: fill;
       z-index: 999;
     }
     .wrapper{
       display:flex;
-      min-height: 400px;
-      width: 770px;
-      border-radius: 20px;
+      min-height: 100%;
+      width: 100%;
+      // border-radius: 20px;
       justify-content: space-between;
       padding-bottom: 135px;
       padding-top: 50px;
       align-items: center;
       flex-direction: column;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.8);
       z-index:999;
-      backdrop-filter: blur(50px);
+      // backdrop-filter: blur(0.5px);
       // -webkit-filter: blur(8px);
       // border: 3px solid black;
-        h1{
+      .text{
+        display:flex;
+        // background: blue;
+        align-items: center;
+        justify-content: center;
+        margin-top : 220px;
+          h1{
           font-size : 65px;
           // margin-top: -100px;
-          font-family: 'Dancing Script', cursive;
-          font-family: 'Patrick Hand', cursive;
+          font-family: 'Ribeye', cursive;
           z-index: 10000;
           // font-weight: bold;
-        }
-        .emoji{
-          display:flex;
-          object-fit: contain;
-          // background: red;
-          width: 300px;
-          height: 300px;
-          z-index: 10000;
-        }      
+        }   
+      } 
         .open-bar{
           display:flex;
-          height: 50px;
-          width:250px;
-          margin-top:50px;
+          height: 60px;
+          width:170px;
+          // margin-top:50px;
           justify-content: center;
           align-items: center;
-          // background: #c4c4c4;
-          border-radius: 20px;
-          margin-bottom: -100px;
+          // background: linear-gradient(rgb(35, 126, 161),rgb(12, 84, 198));
+          border-radius: 30px;
+          margin-bottom: 20px;
           z-index: 10000;
+          border: solid 2px gray;
+          transition: background-color .5s;
           h2{
-            font-size: 30px;
-            font-family: 'Kalam', cursive;
-            font-family: 'Patrick Hand', cursive;
+            font-size: 13px;
+            font-family: 'Ribeye', cursive;
             z-index: 10000;
-            color: khaki;
+            color: gray;
             font-weight: bold;
           }
         }
@@ -166,8 +165,10 @@ export default {
 
 .open-bar:hover {
   cursor: pointer;
-  background: darkorange;
+  // background-color: blue;
+  background-color: gold;
   z-index: 1000000;
+  
 }
 
     // setTimeout

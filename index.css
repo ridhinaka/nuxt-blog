@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  max-width: 500px;
+  padding: 5px;
+  border: black solid 2px;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 35px;
+  /* background:chartreuse ; */
+  flex-wrap: wrap;
+}
+
+.satu{
+  width: 100px;
+  height: 100px;
+  background-color:blue;
+  margin: 2px;
+  flex: 1;
+}

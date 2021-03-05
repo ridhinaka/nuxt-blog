@@ -203,7 +203,7 @@ components: { grid2,video2 },
     }, 9000)
     setTimeout(() => {
       this.showButton = true
-    }, 11000)
+    }, 10000)
 
     },
     mute() {
@@ -243,7 +243,7 @@ components: { grid2,video2 },
     }, 9000)
     setTimeout(() => {
       this.showButton = true
-    }, 11000)
+    }, 10000)
   },
 
 }
